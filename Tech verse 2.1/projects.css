@@ -1,0 +1,246 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: system-ui, -apple-system, sans-serif;
+}
+
+body {
+    background-color: #0a0a0a;
+    color: white;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.navbar {
+    background-color: #0f0f1a;
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    color: #6366f1;
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.nav-links {
+    display: flex;
+    gap: 2rem;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+.projects-container {
+    max-width: 1200px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+    flex: 1;
+}
+
+.section-title {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.project-filters {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    margin-bottom: 2rem;
+    flex-wrap: wrap;
+}
+
+.filter-button {
+    background-color: #1a1a2e;
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 0.25rem;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.filter-button:hover {
+    background-color: #2a2a3e;
+}
+
+.filter-button.active {
+    background-color: #6366f1;
+}
+
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.project-card {
+    background-color: #1a1a2e;
+    border-radius: 0.5rem;
+    overflow: hidden;
+    transition: transform 0.2s;
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+}
+
+.project-image {
+    width: 100%;
+    height: 200px;
+    overflow: hidden;
+}
+
+.project-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.project-content {
+    padding: 1.5rem;
+}
+
+.project-tags {
+    display: flex;
+    gap: 0.5rem;
+    flex-wrap: wrap;
+    margin-bottom: 1rem;
+}
+
+.tag {
+    background-color: #2d2d44;
+    color: #6366f1;
+    padding: 0.25rem 0.75rem;
+    border-radius: 1rem;
+    font-size: 0.875rem;
+}
+
+.project-title {
+    font-size: 1.25rem;
+    margin-bottom: 1rem;
+    color: #6366f1;
+}
+
+.project-description {
+    color: #a0a0a0;
+    margin-bottom: 1.5rem;
+    line-height: 1.5;
+}
+
+.project-stats {
+    display: flex;
+    gap: 1rem;
+    color: #a0a0a0;
+    margin-bottom: 1rem;
+}
+
+.project-actions {
+    display: flex;
+    gap: 1rem;
+}
+
+.primary-button, .secondary-button {
+    padding: 0.5rem 1rem;
+    border-radius: 0.25rem;
+    text-decoration: none;
+    transition: background-color 0.2s;
+    flex: 1;
+    text-align: center;
+}
+
+.primary-button {
+    background-color: #6366f1;
+    color: white;
+}
+
+.primary-button:hover {
+    background-color: #4f46e5;
+}
+
+.secondary-button {
+    background-color: transparent;
+    color: #6366f1;
+    border: 1px solid #6366f1;
+}
+
+.secondary-button:hover {
+    background-color: #6366f115;
+}
+
+.load-more {
+    text-align: center;
+    margin-top: 3rem;
+}
+
+.load-more-button {
+    background-color: transparent;
+    color: #6366f1;
+    border: 2px solid #6366f1;
+    padding: 0.75rem 2rem;
+    border-radius: 0.25rem;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: all 0.2s;
+}
+
+.load-more-button:hover {
+    background-color: #6366f1;
+    color: white;
+}
+
+/* Footer Styles */
+.footer {
+    background-color: #0f0f1a;
+    padding: 3rem 0;
+    margin-top: auto;
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+}
+
+.footer-section h3 {
+    color: #6366f1;
+    font-size: 1.25rem;
+    margin-bottom: 1rem;
+}
+
+.footer-section p {
+    color: #a0a0a0;
+    line-height: 1.6;
+}
+
+.footer-section ul {
+    list-style: none;
+}
+
+.footer-section ul li {
+    margin-bottom: 0.5rem;
+}
+
+.footer-section ul li a {
+    color: #a0a0a0;
+    text-decoration: none;
+    transition: color 0.2s;
+}
+
+.footer-section ul li a:hover {
+    color: #6366f1;
+}

@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TechVerse - Courses</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="courses.css">
+</head>
+<body>
+    <header>
+        <nav class="container">
+            <a href="homepage.html" class="logo">Tech<span>Verse</span></a>
+            <div class="nav-links">
+                <a href="homepage.html">Home</a>
+                <a href="courses.html" class="active">Courses</a>
+                <a href="playground.html">Playground</a>
+                <a href="projects.html">Projects</a>
+                <a href="community.html">Community</a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Course Header -->
+        <section class="course-header">
+            <div class="container">
+                <h1>Explore Our Courses</h1>
+                <div class="search-filters">
+                    <div class="search-box">
+                        <input type="text" placeholder="Search courses...">
+                        <button class="search-btn">Search</button>
+                    </div>
+                    <div class="filters">
+                        <select class="filter-select">
+                            <option value="">Difficulty Level</option>
+                            <option value="beginner">Beginner</option>
+                            <option value="intermediate">Intermediate</option>
+                            <option value="advanced">Advanced</option>
+                        </select>
+                        <select class="filter-select">
+                            <option value="">Category</option>
+                            <option value="web">Web Development</option>
+                            <option value="mobile">Mobile Development</option>
+                            <option value="ai">AI & Machine Learning</option>
+                            <option value="data">Data Science</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Featured Courses -->
+        <section class="featured-courses container">
+            <h2>Featured Courses</h2>
+            <div class="course-grid">
+                <article class="course-card featured">
+                    <div class="course-image">
+                        <img src="2022-07-19-Melhores-cursos-de-Python.jpg"  alt="Python Course">
+                        <span class="difficulty beginner">Beginner</span>
+                    </div>
+                    <div class="course-content">
+                        <h3>Complete Python Bootcamp</h3>
+                        <p>Master Python fundamentals through hands-on projects and exercises.</p>
+                        <div class="course-meta">
+                            <span class="duration">40 hours</span>
+                            <span class="rating">4.8 ⭐</span>
+                        </div>
+                        <div class="course-progress">
+                            <div class="progress-bar" style="width: 0%"></div>
+                            <span class="progress-text">Not Started</span>
+                        </div>
+                        <a href="#" class="btn btn-primary">Start Learning</a>
+                    </div>
+                </article>
+
+                <article class="course-card">
+                    <div class="course-image">
+                        <img src="web-devel-important.jpg" alt="Web Development">
+                        <span class="difficulty intermediate">Intermediate</span>
+                    </div>
+                    <div class="course-content">
+                        <h3>Modern Web Development</h3>
+                        <p>Learn React, Node.js, and modern web development practices.</p>
+                        <div class="course-meta">
+                            <span class="duration">55 hours</span>
+                            <span class="rating">4.9 ⭐</span>
+                        </div>
+                        <div class="course-progress">
+                            <div class="progress-bar" style="width: 0%"></div>
+                            <span class="progress-text">Not Started</span>
+                        </div>
+                        <a href="#" class="btn btn-primary">Start Learning</a>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <!-- Course Categories -->
+        <section class="course-categories container">
+            <h2>Browse by Category</h2>
+            <div class="category-grid">
+                <div class="category-card">
+                    <div class="category-icon">🌐</div>
+                    <h3>Web Development</h3>
+                    <p>15 Courses</p>
+                </div>
+                <div class="category-card">
+                    <div class="category-icon">📱</div>
+                    <h3>Mobile Development</h3>
+                    <p>12 Courses</p>
+                </div>
+                <div class="category-card">
+                    <div class="category-icon">🤖</div>
+                    <h3>AI & Machine Learning</h3>
+                    <p>8 Courses</p>
+                </div>
+                <div class="category-card">
+                    <div class="category-icon">📊</div>
+                    <h3>Data Science</h3>
+                    <p>10 Courses</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- All Courses -->
+        <section class="all-courses container">
+            <h2>All Courses</h2>
+            <div class="course-grid">
+                <!-- Course cards similar to featured courses -->
+                <!-- Adding a few more course examples -->
+                <article class="course-card">
+                    <div class="course-image">
+                        <img src="JavaScript.jpg" alt="JavaScript Course">
+                        <span class="difficulty beginner">Beginner</span>
+                    </div>
+                    <div class="course-content">
+                        <h3>JavaScript Essentials</h3>
+                        <p>Learn modern JavaScript from the basics to advanced concepts.</p>
+                        <div class="course-meta">
+                            <span class="duration">35 hours</span>
+                            <span class="rating">4.7 ⭐</span>
+                        </div>
+                        <div class="course-progress">
+                            <div class="progress-bar" style="width: 0%"></div>
+                            <span class="progress-text">Not Started</span>
+                        </div>
+                        <a href="#" class="btn btn-primary">Start Learning</a>
+                    </div>
+                </article>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container footer-content">
+            <div class="footer-section">
+                <h4>About TechVerse</h4>
+                <p>Empowering the next generation of developers through interactive learning.</p>
+            </div>
+            <div class="footer-section">
+                <h4>Quick Links</h4>
+                <ul class="footer-links">
+                    <li><a href="courses.html">Browse Courses</a></li>
+                    <li><a href="playground.html">Code Playground</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="community.html">Community</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Connect With Us</h4>
+                <ul class="footer-links">
+                    <li><a href="https://x.com/i/flow/login" target="_blank">X</a></li>
+                    <li><a href="https://github.com/login" target="_blank">GitHub</a></li>
+                    <li><a href="https://discord.com/login" target="_blank">Discord</a></li>
+                    <li><a href="https://www.linkedin.com/login" target="_blank">LinkedIn</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
